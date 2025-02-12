@@ -12,7 +12,7 @@ title                    : "Skye Mceowen"
 title_separator          : "-"
 name                     : &name "Skye Mceowen"
 description              : &description "personal description"
-url                      : https://mceowen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://mceowen.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mceowen/mceowen.github.io"
 
@@ -24,7 +24,7 @@ author:
   avatar           : "headshot.jpeg" # Place an image in /images/ and reference it here
   name             : "Skye Mceowen"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student at UWACL"
+  bio              : "Ph.D. Student in the Autonomous Controls Laboratory at the University of Washington"
   location         : "Seattle WA"
   employer         : University of Washington
   uri              : # URL
