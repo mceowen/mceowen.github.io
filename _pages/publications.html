@@ -1,0 +1,103 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+
+<style>
+  @media (max-width: 1300px) {
+    .responsive-item {
+      width: 100% !important;
+      flex: 1 1 100% !important;
+      margin: 10px auto;
+    }
+  }
+  .responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .responsive-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%; /* Ensure the container spans full width */
+  }
+</style>
+
+
+<h2>Journal Publications</h2>
+<div class="responsive-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="/papers/los/" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/autoscvx/static/images/paper.png" alt="autoscvx" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">Auto-tuned Primal-dual Successive Convexification for Hypersonic Reentry Guidance</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Skye Mceowen, Daniel J. Calderone, Aman Tiwary, Jason S. K. Zhou, Taewan Kim, Purnanand Elango, Beh&#231;et
+              A&#231;&#305;kme&#351;e</p>
+            <p style="margin: 5px 0 0; font-size: 10pt"><i>Journa of Guidance, Control, and Dynamics (in review)</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<h2>Conference Publications</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="/papers/halo/" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/autoscvx_scitech/static/images/autoscvx_scitech.png" alt="autoscvx" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">Auto-tuned Primal-dual Successive Convexification for Hypersonic Reentry Guidance</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Skye Mceowen, Daniel J. Calderone, Aman Tiwary, Jason S. K. Zhou, Taewan Kim, Purnanand Elango, Beh&#231;et
+              A&#231;&#305;kme&#351;e</p>
+            <p style="margin: 5px 0 0; font-size: 10pt;"><i>AIAA Scitech Forum</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <p style="font-size: 8pt;"><sup>*</sup> indicates equal controbutions</p>
+</div>
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% if post.image %}
+        <img src="{{ site.baseurl }}{{ post.image }}" alt="Publication image" width="300">
+      {% endif %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% if post.image %}
+      <img src="{{ site.baseurl }}{{ post.image }}" alt="Publication image" width="300">
+    {% endif %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,270 @@
+body {
+  background-color: #2b2b2b;
+  color: #2b2b2b;
+  width: 90%; /* Adjust this value as needed */
+  margin: 0 auto; /* This centers the body */
+  padding: 0;
+}
+
+.is-size-5.publication-authors {
+  color: white;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.youtube-video {
+  width: 80%;
+  min-width: 40ex;
+  max-width: 100ex;
+  aspect-ratio: 16 / 9;
+}
+
+#abstract {
+  color: white;
+}
+
+.author-block a {
+  color: white;
+}
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.footer {
+  background-color: #2b2b2b; /* Add this line */
+}
+
+#abstract h2 {
+  padding: 1px 0; /* Adjust these values to your liking */
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.centered-container {
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .plotly_container {
+    width: 100% !important;
+  }
+}
+
+
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+.eql-cntrb {
+  margin-bottom: 100px; /* Adjust this value to your liking */
+}
+
+.publication-links {
+  margin-top: 100px; /* Adjust this value to your liking */
+}
+
+#abstract p {
+  margin-bottom: 0; /* Adjust this value to your liking */
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+#abstract {
+  padding-bottom: 1rem; /* Adjust this value to your liking */
+}
+
+/* .teaser {
+  font-family: 'Google Sans', sans-serif;
+} */
+
+.external-link img {
+  border: 2px solid black; /* Adjust this value to your liking */
+}
+
+.footer .content p {
+  text-align: left; /* Aligns the text to the left */
+  color: #999999; /* Makes the text darker */
+}
+
+.fab.fa-github {
+  color: #ffffff; /* Makes the icon white */
+}
+
+.external-link span {
+  color: #ffffff; /* Makes the text white */
+}
+
+.external-link {
+  margin-right: 40px; /* Adjust this value to your liking */
+}
+
+.publication-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.column.has-text-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.external-link div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.button {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Adjust this value to your liking */
+  border-radius: 0;
+}
+
+.publication-title {
+}
+
+
+
+.publication-subtitle {
+  /* Make light grey */
+  color: #999999;
+}
+
+.publication-banner {
+  max-height: parent;
+  background-color: #000000; /* Add this line */
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+#BibTeX h2.title {
+  color: #999999;
+}
+
+#abstract h2.title {
+  color: #999999;
+}
+#BibTeX pre, #BibTeX code {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.publication-header .hero-body {
+}
+
+/* .publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+} */
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  color: #fff;
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+  color: #000000;
+}
+
+.results-carousel .item {
+  /* margin: 5px; */
+  overflow: hidden;
+  /* padding: 20px; */
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}

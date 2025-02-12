@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta property="og:title" content="AutoSCvx"/>
+  <meta property="og:description" content="AutoSCvx"/>
+  <meta property="og:url" content="https://mceowen.github.io/papers/autoscvx_jgcd/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="perception, trajectory optimization, robotics, convex optimization">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title style="color: #ffffff;">Auto-tuned Primal-dual Successive Convexification for Hypersonic Reentry Guidance</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <style>
+    .responsive-icon {
+      width: 150px;
+      height: 150px;
+    }
+  
+    @media (max-width: 1000px) {
+      .responsive-icon {
+        width: 75px;
+        height: 75px;
+      }
+    }
+    @media (max-width: 600px) {
+      .responsive-icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    @media (max-width: 1300px) {
+      .responsive-title {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="font-family: 'Computer Modern Sans'; font-size: clamp(28px, 3vw, 42px); color: white">Auto-tuned Primal-dual Successive Convexification</h1>
+            <h2 class="subtitle is-2 publication-subtitle" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px); color: #999999">for Hypersonic Reentry Guidance</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="/" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Skye Mceowen</a>,</span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/daniel-calderone-5753458b/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Daniel J. Calderone</a>,</span>
+                  <span class="author-block">
+                    <a href="https://amantiwary10.github.io/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Aman Tiwary</a>,</span>
+                    <span class="author-block">
+                      <a href="https://www.linkedin.com/in/jskzhou/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Jason S. K. Zhou</a>,</span>
+                      <span class="author-block">
+                        <a href="http://taewanresearch.notion.site/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Taewan Kim</a>,</span>
+                        <span class="author-block">
+                          <a href="https://www.linkedin.com/in/purnanandelango/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Purnanand Elango</a>,</span>
+                          <span class="author-block">
+                            <a href="https://www.aa.washington.edu/facultyfinder/behcet-acikmese" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Beh&#231;et A&#231;&#305;kme&#351;e</a>
+                  </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px)">Journal of Guidance, Control, and Dynamics (JGCD), 2025</span>
+                  </div>
+
+                  <!-- Add horizontal line -->
+                  <hr style="border-top: 1px solid #ffffff; margin-top: 1rem; margin-bottom: 1rem;">
+
+                  <div class="publication-links" style="display: flex; justify-content: center; margin-top: 3rem; margin-left: 25px">
+                    <!-- Arxiv PDF link -->
+                    <a href="https://arxiv.org/pdf/2411.08361" target="_blank" class="external-link">
+                      <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/paper.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Paper</span>
+                      </div>
+                    </a>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div style="display: flex; justify-content: center; height: 400px">
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/KqCXGDTntDU?si=9oDvTdvUmhNsHZqa" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Abstract -->
+<section class="section" id="abstract">
+  <div class="container is-max-desktop content">
+    <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">Abstract</h2>
+    <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px);">
+      This paper presents auto-tuned primal-dual successive convexification (Auto-SCvx), an algorithm designed to reliably achieve dynamically-feasible trajectory solutions for constrained hypersonic reentry optimal 
+      control problems across a large mission parameter space. In Auto-SCvx, we solve a sequence of convex subproblems until convergence to a solution of the original nonconvex problem. This method iteratively optimizes 
+      dual variables in closed-form in order to update the penalty hyperparameters used in the primal variable updates. A benefit of this method is that it is auto-tuning, and requires no hand-tuning by the user with 
+      respect to the constraint penalty weights. Several example hypersonic reentry problems are posed and solved using this method, and comparative studies are conducted against current methods. In these numerical studies, 
+      our algorithm demonstrates equal and often improved performance while not requiring hand-tuning of penalty hyperparameters.
+    </p>
+  </div>
+</section>
+
+<!-- Results -->
+<section class="section" id="results">
+  <div class="container is-max-desktop content">
+    <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">Results</h2>
+    <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px);">
+      <img src="static/heat_rate.gif" alt="Result 1" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+      <img src="static/terminal_weights.gif" alt="Result 2" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+      <img src="static/vel_alt.gif" alt="Result 3" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+    </p>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">BibTeX</h2>
+      <pre class="font-size: clamp(16px, 1.39vw, 20px);"><code>@bibtexhere{}
+      </code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            <!-- Add a copyright by adding your name -->
+            &copy; 2025 Skye Mceowen
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- Default Statcounter code for Academic Website https://mceowen.github.io/ -->
+<script type="text/javascript">
+var sc_project=13048958; 
+var sc_invisible=1; 
+var sc_security="39a5268a"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13048958/0/39a5268a/1/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
+
+  </body>
+  </html>
