@@ -21,7 +21,7 @@ repository               : "mceowen/mceowen.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "headshot.jpeg" # "skye.jpg" # Place an image in /images/ and reference it here
+  avatar           : "headshot2.jpeg" # "skye.jpg" # Place an image in /images/ and reference it here
   name             : "Skye Mceowen"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. Candidate in the Autonomous Controls Laboratory at the University of Washington"
