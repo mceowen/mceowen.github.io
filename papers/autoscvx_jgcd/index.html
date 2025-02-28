@@ -150,7 +150,7 @@
 <section class="section" id="summary">
   <div class="container is-max-desktop content">
     <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px); color: white;">Visualization Summary</h2>
-    <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px);"> 
+    <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px); color: white;"> 
       This page presents visualizations of how our automated penalty weight tuning mechanism evolves throughout the SCP-based trajectory optimization process. 
       These visualizations highlight the adaptive nature of our penalty weight update scheme and its impact on trajectory convergence.
       In both examples, this represents a nonlinear propagation of the optimal control solution, used to verify dynamic feasibility.
@@ -164,7 +164,9 @@
     <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px); color: white;">Results</h2>
     <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px);">
       <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px); color: white;"> 
-        Heat Rate Analysis: The first image displays the evolution of both quadratic and linear penalty weights across algorithm iterations for each constraint at each point in time, with colors at each node indicating their respective values. The second image presents the same penalty weight evolution as the first image but in <em>altitude-velocity space</em>, providing an alternative perspective on constraint handling. </p>
+        Heat Rate Analysis: 
+        The first image displays the evolution of both quadratic and linear penalty weights across algorithm iterations for each constraint at each point in time, with colors at each node indicating their respective values. 
+        The second image presents the same penalty weight evolution as the first image but in <em>altitude-velocity space</em>, providing an alternative perspective on constraint handling. </p>
       <img src="static/images/heat_rate.gif" alt="Result 1" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
       <img src="static/images/vel_alt.gif" alt="Result 3" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
       <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px); color: white;"> 
