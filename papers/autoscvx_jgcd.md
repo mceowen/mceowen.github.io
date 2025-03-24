@@ -1,5 +1,5 @@
 ---
-title: Auto-tuned Primal-dual Successive Convexification for Hypersonic Reentry Guidance
+title: Auto-tuned Primal-dual Successive Convexification for Reentry Guidance
 collection: _publications
 category: journals
 permalink: /publication/autoscvx_jgcd
